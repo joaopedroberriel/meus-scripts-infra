@@ -40,9 +40,9 @@ foreach (user in Usuarios) {
         -Path $DistinguishedNamePath `
         -OtherAttributes @{
             'mailNickname'               = \$user.Nome
-            'msExchRecipientDisplayType' = -2147483642
-            'msExchRecipientTypeDetails' = 2147483648
-            'msExchRemoteRecipientType'  = 1
+            'msExchRecipientDisplayType' = -xxxxxxx
+            'msExchRecipientTypeDetails' = xxxxxxxx
+            'msExchRemoteRecipientType'  = xxxxx
             'targetAddress'               = "SMTP:(user.Nome)@://onmicrosoft.com"
             'proxyAddresses'             = @(
                 "SMTP:(user.Email)"
